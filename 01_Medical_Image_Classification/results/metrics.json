@@ -1,0 +1,23 @@
+{
+  "test_samples": 624,
+  "accuracy": 0.9567,
+  "precision": 0.9416,
+  "recall_sensitivity": 0.9923,
+  "specificity": 0.8974,
+  "f1": 0.9663,
+  "roc_auc": 0.9935,
+  "confusion_matrix": [
+    [
+      210,
+      24
+    ],
+    [
+      3,
+      387
+    ]
+  ],
+  "best_val_auc": 0.9985,
+  "train_time_sec": 239.5627,
+  "epochs": 15,
+  "image_size": 128
+}

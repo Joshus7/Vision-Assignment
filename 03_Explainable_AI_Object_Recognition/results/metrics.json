@@ -1,0 +1,50 @@
+{
+  "recognition": {
+    "top1_imagenet1k": 0.8094,
+    "top5_imagenet1k": 0.9694,
+    "top1_restricted_to_10_classes": 0.9954,
+    "n_images": 3925
+  },
+  "faithfulness": {
+    "Saliency": {
+      "deletion_auc_mean": 0.1395,
+      "deletion_auc_std": 0.112,
+      "insertion_auc_mean": 0.179,
+      "insertion_auc_std": 0.1105,
+      "centre_energy": 0.3147
+    },
+    "Grad-CAM": {
+      "deletion_auc_mean": 0.1075,
+      "deletion_auc_std": 0.1012,
+      "insertion_auc_mean": 0.3187,
+      "insertion_auc_std": 0.1541,
+      "centre_energy": 0.4877
+    },
+    "Grad-CAM++": {
+      "deletion_auc_mean": 0.1101,
+      "deletion_auc_std": 0.1023,
+      "insertion_auc_mean": 0.31,
+      "insertion_auc_std": 0.1573,
+      "centre_energy": 0.4535
+    },
+    "Occlusion": {
+      "deletion_auc_mean": 0.1619,
+      "deletion_auc_std": 0.1517,
+      "insertion_auc_mean": 0.3359,
+      "insertion_auc_std": 0.1713,
+      "centre_energy": 0.3246
+    },
+    "Random": {
+      "deletion_auc_mean": 0.1446,
+      "deletion_auc_std": 0.1028,
+      "insertion_auc_mean": 0.1445,
+      "insertion_auc_std": 0.1024,
+      "centre_energy": 0.2501
+    }
+  },
+  "sanity_check_spearman_trained_vs_randomised": {
+    "Grad-CAM": 0.0786,
+    "Saliency": 0.3295
+  },
+  "n_eval_images": 300
+}

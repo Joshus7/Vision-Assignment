@@ -1,0 +1,73 @@
+{
+  "video": {
+    "solidWhiteRight.mp4/baseline": {
+      "frames": 221,
+      "both_lanes_detected_rate": 1.0,
+      "mean_frame_jitter_pct_width": 0.39,
+      "lane_width_cv": 0.011,
+      "mean_abs_offset_m": 0.1377,
+      "warning_frame_rate": 0.0,
+      "fps": 318.9327
+    },
+    "solidWhiteRight.mp4/improved": {
+      "frames": 221,
+      "both_lanes_detected_rate": 1.0,
+      "mean_frame_jitter_pct_width": 0.0863,
+      "lane_width_cv": 0.0074,
+      "mean_abs_offset_m": 0.1344,
+      "warning_frame_rate": 0.0,
+      "fps": 76.2399
+    },
+    "solidYellowLeft.mp4/baseline": {
+      "frames": 681,
+      "both_lanes_detected_rate": 1.0,
+      "mean_frame_jitter_pct_width": 0.6213,
+      "lane_width_cv": 0.0261,
+      "mean_abs_offset_m": 0.1278,
+      "warning_frame_rate": 0.0,
+      "fps": 346.4249
+    },
+    "solidYellowLeft.mp4/improved": {
+      "frames": 681,
+      "both_lanes_detected_rate": 1.0,
+      "mean_frame_jitter_pct_width": 0.0892,
+      "lane_width_cv": 0.0085,
+      "mean_abs_offset_m": 0.1418,
+      "warning_frame_rate": 0.0,
+      "fps": 86.5077
+    },
+    "challenge.mp4/baseline": {
+      "frames": 251,
+      "both_lanes_detected_rate": 1.0,
+      "mean_frame_jitter_pct_width": 2.4086,
+      "lane_width_cv": 0.1103,
+      "mean_abs_offset_m": 0.1832,
+      "warning_frame_rate": 0.008,
+      "fps": 217.1956
+    },
+    "challenge.mp4/improved": {
+      "frames": 251,
+      "both_lanes_detected_rate": 1.0,
+      "mean_frame_jitter_pct_width": 0.1692,
+      "lane_width_cv": 0.023,
+      "mean_abs_offset_m": 0.1971,
+      "warning_frame_rate": 0.0,
+      "fps": 53.5862
+    }
+  },
+  "departure_experiment": {
+    "trials": 525,
+    "detected": 402,
+    "offset_MAE_m": 0.0131,
+    "offset_RMSE_m": 0.0174,
+    "warning_precision": 0.9843,
+    "warning_recall": 0.9792,
+    "warning_accuracy": 0.9826,
+    "confusion": {
+      "tp": 188,
+      "fp": 3,
+      "fn": 4,
+      "tn": 207
+    }
+  }
+}

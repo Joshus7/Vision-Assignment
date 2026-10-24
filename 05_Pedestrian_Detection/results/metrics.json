@@ -1,0 +1,63 @@
+{
+  "dataset": {
+    "images": 170,
+    "pedestrians": 423,
+    "mean_per_image": 2.4882,
+    "box_height_px": {
+      "min": 19.0,
+      "median": 285.0,
+      "max": 375.0
+    }
+  },
+  "detectors": {
+    "HOG + SVM": {
+      "map": 0.1759,
+      "map_50": 0.4696,
+      "map_75": 0.0443,
+      "map_small": -1.0,
+      "map_medium": 0.0151,
+      "map_large": 0.1988,
+      "mar_100": 0.2748,
+      "precision@0.5": 0.4615,
+      "recall@0.5": 0.5854,
+      "f1@0.5": 0.5161,
+      "fps": 27.0876,
+      "n_gt": 123,
+      "box_shrink_xy": [
+        0.15,
+        0.1
+      ]
+    },
+    "Faster R-CNN (COCO, zero-shot)": {
+      "map": 0.8392,
+      "map_50": 0.9761,
+      "map_75": 0.9456,
+      "map_small": -1.0,
+      "map_medium": 0.3302,
+      "map_large": 0.8538,
+      "mar_100": 0.8805,
+      "precision@0.5": 0.5442,
+      "recall@0.5": 1.0,
+      "f1@0.5": 0.7049,
+      "fps": 15.3933,
+      "n_gt": 123
+    },
+    "Faster R-CNN (fine-tuned)": {
+      "map": 0.8559,
+      "map_50": 0.9929,
+      "map_75": 0.9236,
+      "map_small": -1.0,
+      "map_medium": 0.5721,
+      "map_large": 0.8639,
+      "mar_100": 0.9,
+      "precision@0.5": 0.8601,
+      "recall@0.5": 1.0,
+      "f1@0.5": 0.9248,
+      "fps": 16.4204,
+      "n_gt": 123,
+      "finetune_time_sec": 259.6366
+    }
+  },
+  "score_threshold": 0.5,
+  "device": "cuda"
+}

@@ -1,0 +1,82 @@
+{
+  "HOG+Color / Linear SVM": {
+    "train_images": 50000,
+    "train_time_sec": 852.5374,
+    "infer_ms_per_img": 0.1994,
+    "accuracy": 0.5648,
+    "macro_f1": 0.558,
+    "per_class_accuracy": {
+      "airplane": 0.642,
+      "automobile": 0.716,
+      "bird": 0.405,
+      "cat": 0.327,
+      "deer": 0.46,
+      "dog": 0.435,
+      "frog": 0.707,
+      "horse": 0.603,
+      "ship": 0.652,
+      "truck": 0.701
+    },
+    "robustness_accuracy": {
+      "clean": 0.5648,
+      "gaussian_noise": 0.3755,
+      "blur": 0.4491,
+      "brightness": 0.5129,
+      "low_contrast": 0.5028
+    }
+  },
+  "HOG+Color / RBF SVM": {
+    "train_images": 10000,
+    "train_time_sec": 19.5766,
+    "infer_ms_per_img": 4.6708,
+    "accuracy": 0.5594,
+    "macro_f1": 0.5602,
+    "per_class_accuracy": {
+      "airplane": 0.679,
+      "automobile": 0.722,
+      "bird": 0.503,
+      "cat": 0.388,
+      "deer": 0.456,
+      "dog": 0.409,
+      "frog": 0.601,
+      "horse": 0.553,
+      "ship": 0.624,
+      "truck": 0.659
+    },
+    "robustness_accuracy": {
+      "clean": 0.5594,
+      "gaussian_noise": 0.3519,
+      "blur": 0.4481,
+      "brightness": 0.5047,
+      "low_contrast": 0.4467
+    }
+  },
+  "CNN (SmallVGG)": {
+    "train_images": 50000,
+    "train_time_sec": 214.5885,
+    "infer_ms_per_img": 0.0424,
+    "params": 1149770,
+    "device": "cuda",
+    "accuracy": 0.9272,
+    "macro_f1": 0.9271,
+    "per_class_accuracy": {
+      "airplane": 0.922,
+      "automobile": 0.96,
+      "bird": 0.884,
+      "cat": 0.845,
+      "deer": 0.945,
+      "dog": 0.897,
+      "frog": 0.962,
+      "horse": 0.949,
+      "ship": 0.962,
+      "truck": 0.946
+    },
+    "robustness_accuracy": {
+      "clean": 0.9272,
+      "gaussian_noise": 0.3643,
+      "blur": 0.2912,
+      "brightness": 0.8979,
+      "low_contrast": 0.8168
+    }
+  }
+}
